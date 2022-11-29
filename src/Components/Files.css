@@ -1,0 +1,14 @@
+#uploaded-files-text {
+  display: flex;
+  float: left;
+  width: 100%;
+  margin-left: 10%;
+  margin-top: -20px;
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 70%;
+}
+
+.file-text {
+  color: black;
+}
