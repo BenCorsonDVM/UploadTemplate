@@ -1,14 +1,15 @@
-#uploaded-files-text {
-  display: flex;
-  float: left;
-  width: 100%;
-  margin-left: 10%;
-  margin-top: -20px;
-  font-size: 12px;
-  font-weight: 100;
-  opacity: 70%;
+#uploaded-files {
+  height: 100px;
 }
 
 .file-text {
   color: black;
+  width: 60%;
+  padding-top: 16px;
+}
+
+.uploaded-image {
+  display: flex;
+  float: left;
+  margin-left: 10%;
 }

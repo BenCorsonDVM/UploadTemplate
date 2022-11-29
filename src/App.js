@@ -4,13 +4,14 @@ import CloudLarge from "./cloud-large.png";
 import "./App.css";
 import "./Components/Files.css";
 import Files from "./Components/Files";
-import { FileIcon } from "react-file-icon";
 
 function App() {
-  const [files, setFiles] = useState({});
+  const [files, setFiles] = useState([]);
+  const [images, setImages] = useState([]);
 
-  const changeHandler = (event) => {
-    setFiles(event.target.files[0]);
+  const changeHandler = (e) => {
+    setFiles(e.target.files[0]);
+    setImages(URL.createObjectURL(e.target.files[0]));
   };
 
   return (
@@ -41,7 +42,7 @@ function App() {
       </div>
       <div id="file-upload-bottom">
         <p id="uploaded-files-text">Uploaded files</p>
-        <Files props={files} />
+        <Files files={files} images={images} />
       </div>
     </div>
   );
