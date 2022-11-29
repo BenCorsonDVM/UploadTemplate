@@ -28,7 +28,6 @@ function App() {
         <p id="or-text">OR</p>
         <input
           type="file"
-          accept="image/*"
           id="hidden-file-btn"
           hidden
           onChange={changeHandler}
